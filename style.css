@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --border-radius-tl:0%;
+    --border-radius-tr:0%;
+    --border-radius-br:0%;
+    --border-radius-bl:0%;
+}
 body{
     height: 100vh;
     width: 100vw;
@@ -21,13 +27,16 @@ input{
 .resultant-div{
     background-color: red;
     width: 90%;
-    height: 92.5%;
+    height: 90%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 4%;
-    margin-bottom: 4%;
+    /*border-radius*/
+    border-top-left-radius: var(--border-radius-tl);
+    border-top-right-radius: var(--border-radius-tr);
+    border-bottom-right-radius: var(--border-radius-br);
+    border-bottom-left-radius: var(--border-radius-bl);
 }
 .resultant-code{
     background-color: wheat;
@@ -37,24 +46,24 @@ input{
 #input_tl{
     position: absolute;
     top: 0;
-    left: 1%;
+    left: 0%;
     background-color: green;
 }
 #input_tr{
     position: absolute;
     top: 0;
-    right: 1%;
+    right: 0%;
     background-color: blue;
 }
 #input_br{
     position: absolute;
-    bottom: 0%;
-    right: 1%;
+    bottom: 10%;
+    right: 0%;
     background-color: yellow;
 }
 #input_bl{
     position: absolute;
-    bottom: 0%;
-    left: 1%;
+    bottom: 10%;
+    left: 0%;
     background-color: grey;
 }
