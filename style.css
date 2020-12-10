@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    width: 70vw;
+    height: 70vh;
+    position: relative;
+}
+input{
+    width: 4%;
+}
+.resultant-div{
+    background-color: red;
+    width: 90%;
+    height: 92.5%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.resultant-code{
+    background-color: wheat;
+    width: 70%;
+    height: 60%;
+}
+#input_tl{
+    position: absolute;
+    top: 0;
+    left: 1%;
+    background-color: green;
+}
+#input_tr{
+    position: absolute;
+    top: 0;
+    right: 1%;
+    background-color: blue;
+}
+#input_br{
+    position: absolute;
+    bottom: 0%;
+    right: 1%;
+    background-color: yellow;
+}
+#input_bl{
+    position: absolute;
+    bottom: 0%;
+    left: 1%;
+    background-color: grey;
+}
