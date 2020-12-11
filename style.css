@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,10 +10,16 @@
     --border-radius-br:0;
     --border-radius-bl:0;
 }
-
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg,#4b1aa5 65%, #f77992 );
+}
 header{
     height: 10vh;
     text-align: center;
+    padding: 0.5rem 0;
+    color: #d8971f;
+    text-shadow: 2px 2px 8px #475fe7a8;
 }
 #content{
     height: 90vh;
@@ -20,7 +27,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 main{
     width: 70vw;
@@ -28,10 +34,17 @@ main{
     position: relative;
 }
 input{
-    width: 4%;
+    width: 4.5%;
+    background: white;
+    border: none;
+    color: #000000;
+    font-weight: 600;
+    padding-left: 0.1rem;
 }
 .resultant-div{
-    background-color: red;
+    background: linear-gradient(40deg, #76118f 20%,#4b0155 80%);
+    box-shadow: 1px 2px 8px -2px #e0b2bd,
+                -1px -2px 8px 2px #290c5f;
     width: 90%;
     height: 90%;
     margin: 0 auto;
@@ -45,7 +58,7 @@ input{
     border-bottom-left-radius: var(--border-radius-bl);
 }
 .resultant-code{
-    background-color: wheat;
+    background-color: #fac9dd;
     width: 70%;
     height: 60%;
     display: flex;
@@ -53,6 +66,9 @@ input{
     justify-content: center;
     font-size: large;
     position: relative;
+}
+#code{
+    font-size: 1rem;
 }
 #copy{
     position: absolute;
@@ -65,23 +81,19 @@ input{
     position: absolute;
     top: 0;
     left: 0%;
-    background-color: green;
 }
 #input_tr{
     position: absolute;
     top: 0;
     right: 0%;
-    background-color: blue;
 }
 #input_br{
     position: absolute;
     bottom: 10%;
     right: 0%;
-    background-color: yellow;
 }
 #input_bl{
     position: absolute;
     bottom: 10%;
     left: 0%;
-    background-color: grey;
 }
