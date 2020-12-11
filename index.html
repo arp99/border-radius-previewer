@@ -10,16 +10,16 @@
     <header><h1>Border Radius playground</h1></header>
     <section id="content">
         <main>
-            <input type="text" id="input_tl" placeholder="0" maxlength="5">
-            <input type="text" id="input_tr" placeholder="0" maxlength="5">
+            <input type="text" id="input_tl" placeholder="0" maxlength="5" onkeypress="return restrictInput(event)">
+            <input type="text" id="input_tr" placeholder="0" maxlength="5" onkeypress="return restrictInput(event)">
             <div class="resultant-div">
                 <div class="resultant-code">
                     <p id="code"></p>
                     <button id="copy">Copy to clipboard</button>
                 </div>
             </div>
-            <input type="text" id="input_br" placeholder="0" maxlength="5">
-            <input type="text" id="input_bl" placeholder="0" maxlength="5">
+            <input type="text" id="input_br" placeholder="0" maxlength="5" onkeypress="return restrictInput(event)">
+            <input type="text" id="input_bl" placeholder="0" maxlength="5" onkeypress="return restrictInput(event)">
         </main>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
