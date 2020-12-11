@@ -8,7 +8,6 @@ let final_code;
 
 function restrictInput(evt){
     var charCode = evt.key;
-    console.log(charCode)
     if(charCode === '.' || (parseInt(charCode) >= 0 && parseInt(charCode)<=9))
         return true
     else
