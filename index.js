@@ -5,6 +5,16 @@ const btnCopy = document.querySelector('#copy')
 
 let tl = tr = br = bl = '0%';
 let final_code;
+
+function restrictInput(evt){
+    var charCode = evt.key;
+    console.log(charCode)
+    if(charCode === '.' || (parseInt(charCode) >= 0 && parseInt(charCode)<=9))
+        return true
+    else
+        return false
+}
+
 inputElements.forEach((element)=>{
     
     element.addEventListener('input',(event)=>{
